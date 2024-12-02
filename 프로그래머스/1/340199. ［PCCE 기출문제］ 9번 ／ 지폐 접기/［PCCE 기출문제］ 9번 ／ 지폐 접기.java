@@ -1,6 +1,6 @@
 class Solution {
     public int solution(int[] wallet, int[] bill) {
-        int billSize1 = bill[0];
+       		int billSize1 = bill[0];
 		int billSize2 = bill[1];
 		int walletSize1 = wallet[0];
 		int walletSize2 = wallet[1];
