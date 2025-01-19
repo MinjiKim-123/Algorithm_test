@@ -11,4 +11,9 @@ class Solution {
     	
         return answer;
     }
+
+    //아래 방식처럼 Stringbuilder를 사용해 푸는 것도 좋아보임.
+     public int[] solution(long n) {
+        return new StringBuilder().append(n).reverse().chars().map(Character::getNumericValue).toArray();
+    }
 }
