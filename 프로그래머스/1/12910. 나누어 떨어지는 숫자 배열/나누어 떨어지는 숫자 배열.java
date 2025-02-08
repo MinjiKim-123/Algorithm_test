@@ -19,4 +19,10 @@ class Solution {
         }
         return answer;
     }
+
+    //이렇게 stream의 filter를 사용하는 방법도 괜찮을 듯..??
+    public int[] solution2(int[] array, int divisor) {
+        int [] answer = Arrays.stream(arr).filter(num -> num % divisor ==0).sorted().toArray();
+		return answer.length == 0 ? new int[] {-1} : answer;
+    }
 }
