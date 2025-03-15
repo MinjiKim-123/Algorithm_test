@@ -12,4 +12,12 @@ class Solution {
 
         return answer;
     }
+    // 보기에도 간단하고 성능 생각하면 이 방법이 더 나은 듯...!
+    public int solution2(int[] numbers) { 
+      int sum = 45;
+        for (int i : numbers) {
+            sum -= i;
+        }
+        return sum;
+    }
 }
